@@ -171,6 +171,8 @@ function hydrateLinks() {
   // Text nodes that print the config values
   const phoneText = $('#phoneLink');
   if (phoneText) phoneText.textContent = CONFIG.phone;
+  const navPhone = $('#navPhone');
+  if (navPhone) navPhone.textContent = CONFIG.phone;
   const footerPhone = $('#footerPhone');
   if (footerPhone) footerPhone.textContent = CONFIG.phone;
 
@@ -307,6 +309,7 @@ function initHeader() {
     burger.setAttribute('aria-expanded', String(open));
     burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     document.body.style.overflow = open ? 'hidden' : '';
+    document.body.classList.toggle('menu-open', open);
   };
 
   burger.addEventListener('click', () => setOpen(burger.getAttribute('aria-expanded') !== 'true'));
