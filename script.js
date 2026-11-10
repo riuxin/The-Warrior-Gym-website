@@ -559,7 +559,29 @@ function initForm() {
 }
 
 /* ============================================================
-   12. BOOT
+   12. SCROLL PROGRESS BAR
+   ============================================================ */
+function initProgress() {
+  const bar = $('#scrollProgress');
+  if (!bar) return;
+
+  let queued = false;
+  const update = () => {
+    const doc = document.documentElement;
+    const max = doc.scrollHeight - window.innerHeight;
+    const p = max > 0 ? Math.min(Math.max(window.scrollY / max, 0), 1) : 0;
+    bar.style.transform = `scaleX(${p})`;
+    queued = false;
+  };
+  const onScroll = () => { if (!queued) { queued = true; requestAnimationFrame(update); } };
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  update();
+}
+
+/* ============================================================
+   13. BOOT
    ============================================================ */
 function boot() {
   hydrateLinks();
@@ -573,6 +595,7 @@ function boot() {
   initCarousels();
   initAccordion();
   initForm();
+  initProgress();
 
   // Keep the open/closed badge honest while the tab stays open
   setInterval(renderTimings, 60_000);

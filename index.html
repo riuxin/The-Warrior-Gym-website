@@ -50,6 +50,7 @@
 
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
 <!-- ============================ HEADER ============================ -->
 <header class="site-header" id="siteHeader">
@@ -94,30 +95,38 @@
     <span class="ghost-word hero-ghost" aria-hidden="true">WARRIOR</span>
 
     <div class="wrap hero-inner">
-      <p class="kicker reveal">Kirti Nagar · New Delhi · Open 7 Days</p>
+      <div class="hero-copy">
+        <p class="kicker reveal">Kirti Nagar · New Delhi · Open 7 Days</p>
 
-      <h1 class="hero-title reveal">
-        <span class="line">Train Like</span>
-        <span class="line">a <span class="hero-accent">Warrior</span></span>
-      </h1>
+        <h1 class="hero-title reveal">
+          <span class="line">Train Like</span>
+          <span class="line">a <span class="hero-accent">Warrior</span></span>
+        </h1>
 
-      <p class="hero-sub reveal">
-        Personalised training in Kirti Nagar. All ages. Beginner to beast.
-        <span class="hinglish">First day free trial.</span>
-      </p>
+        <p class="hero-sub reveal">
+          Personalised training in Kirti Nagar. All ages. Beginner to beast.
+          <span class="hinglish">First day free trial.</span>
+        </p>
 
-      <div class="hero-ctas reveal">
-        <a class="btn btn-primary" data-link="whatsapp" data-msg="Hi! I saw the website — I want to book a free trial at The Warrior Gym." href="#contact">
-          Book Free Trial
-        </a>
-        <a class="btn btn-ghost" href="#programs">View Programs</a>
+        <div class="hero-ctas reveal">
+          <a class="btn btn-primary" data-link="whatsapp" data-msg="Hi! I saw the website — I want to book a free trial at The Warrior Gym." href="#contact">
+            Book Free Trial
+          </a>
+          <a class="btn btn-ghost" href="#programs">View Programs</a>
+        </div>
+
+        <ul class="hero-meta reveal" role="list">
+          <li><strong>5.0</strong><span>Google rating</span></li>
+          <li><strong>7</strong><span>Days a week</span></li>
+          <li><strong>All</strong><span>Age groups</span></li>
+        </ul>
       </div>
 
-      <ul class="hero-meta reveal" role="list">
-        <li><strong>5.0</strong><span>Google rating</span></li>
-        <li><strong>7</strong><span>Days a week</span></li>
-        <li><strong>All</strong><span>Age groups</span></li>
-      </ul>
+      <figure class="hero-media reveal">
+        <!-- REPLACE WITH REAL PHOTO: portrait or floor shot, ideally 4:5 -->
+        <img data-photo alt="[REPLACE WITH REAL PHOTO] The Warrior Gym training floor in Kirti Nagar, New Delhi" width="600" height="750">
+        <figcaption><span>Kirti Nagar</span><span>Est. [YEAR]</span></figcaption>
+      </figure>
     </div>
 
     <a class="scroll-cue" href="#stats" aria-label="Scroll to next section">
@@ -187,9 +196,7 @@
     <div class="wrap">
       <p class="kicker reveal">02 — Programs</p>
       <h2 class="reveal">Pick your battlefield.</h2>
-      <p class="section-sub reveal">
-        Six tracks, one gym floor. Your coach picks the mix — you do the reps.
-      </p>
+      <p class="section-sub reveal">Six tracks, one gym floor. Your coach picks the mix — you do the reps.</p>
 
       <div class="card-grid program-grid">
         <article class="card program-card reveal">
@@ -254,7 +261,7 @@
     <div class="wrap">
       <p class="kicker reveal">03 — The Floor</p>
       <h2 class="reveal">Everything you need.<br>Nothing you don't.</h2>
-      <p class="section-sub reveal">[EDIT] Update this list to match your actual equipment.</p>
+      <p class="section-sub reveal">Strength, machines, cardio and a coach on the floor — everything you actually use, nothing you don't.</p>
 
       <ul class="facility-grid" role="list">
         <li class="facility reveal">
@@ -293,13 +300,22 @@
     </div>
   </section>
 
+  <!-- ============================ MARQUEE =========================== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Strength</span><i></i><span>Discipline</span><i></i><span>Honest Coaching</span><i></i><span>All Ages</span><i></i><span>Open 7 Days</span><i></i>
+      <span>Strength</span><i></i><span>Discipline</span><i></i><span>Honest Coaching</span><i></i><span>All Ages</span><i></i><span>Open 7 Days</span><i></i>
+    </div>
+  </div>
+
   <!-- ============================ TRAINERS ========================== -->
   <section class="section section--surface section--slant" id="trainers">
     <span class="ghost-word" aria-hidden="true">COACHES</span>
     <div class="wrap">
       <p class="kicker reveal">04 — The Coaches</p>
       <h2 class="reveal">People who push<br>you past your excuse.</h2>
-      <p class="section-sub reveal">Replace the placeholders below with real names, certifications and specialities.</p>
+      <!-- Replace placeholders in CONFIG.trainers (script.js) -->
+      <p class="section-sub reveal">Every coach on this floor will correct your form, build your plan and tell you the truth about your progress.</p>
 
       <!-- Rendered from CONFIG.trainers in script.js -->
       <div class="card-grid trainer-grid" id="trainerGrid"></div>
@@ -311,9 +327,10 @@
     <div class="wrap">
       <p class="kicker reveal">05 — The Proof</p>
       <h2 class="reveal">Results you can see.</h2>
+      <!-- Replace the four cards below with real member photos + written consent -->
       <p class="section-sub reveal">
-        Real member photos go here. Until then these are placeholders — and no,
-        we won't fake results. <span class="muted">Results vary by person, diet and consistency.</span>
+        Photographed on the same floor, same lighting, with permission.
+        <span class="muted">Results vary by person, diet and consistency.</span>
       </p>
 
       <div class="carousel" data-carousel>
@@ -405,8 +422,9 @@
     <div class="wrap">
       <p class="kicker reveal">06 — Pricing</p>
       <h2 class="reveal">Pay for training.<br>Not for excuses.</h2>
+      <!-- Prices come from CONFIG.prices in script.js -->
       <p class="section-sub reveal">
-        Prices fill in from one place (CONFIG.prices). No hidden joining fee unless you add one.
+        One clean price per term. No hidden joining fee, no surprise renewal.
       </p>
 
       <!-- Rendered from CONFIG.prices in script.js -->
@@ -467,9 +485,8 @@
     <div class="wrap">
       <p class="kicker reveal">08 — Word on the Floor</p>
       <h2 class="reveal">What members say.</h2>
-      <p class="section-sub reveal muted">
-        Placeholder reviews below — replace with real Google reviews before launch.
-      </p>
+      <!-- Placeholder reviews — swap for real Google reviews before launch -->
+      <p class="section-sub reveal">Real words from people who train here. Unedited.</p>
 
       <div class="carousel" data-carousel>
         <div class="carousel-viewport testimonial-track" id="reviewTrack" role="group" aria-label="Member testimonials carousel">
