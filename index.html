@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!--
+  THE WARRIOR GYM — Kirti Nagar, New Delhi
+  ---------------------------------------------------------------
+  HOW TO EDIT THIS SITE
+  1. All business data (phone, WhatsApp, address, prices, timings,
+     trainers, stats, socials) lives in ONE place: CONFIG at the top
+     of script.js. Edit there, not here.
+  2. Photos: every <img data-photo> is a labelled placeholder. Replace
+     with <img src="assets/your-photo.jpg" alt="..." loading="lazy">
+     and delete the data-photo attribute.
+  3. Copy (headlines, program text, FAQ answers) is plain HTML below —
+     search for the section name.
+  4. Styles: styles.css.  Behaviour: script.js.
+  ---------------------------------------------------------------
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Warrior Gym | Best Gym in Kirti Nagar, Delhi</title>
+<meta name="description" content="The Warrior Gym, Kirti Nagar — personalised strength, fat-loss and functional training for all ages. Free trial, flexible timings, open 7 days. Train like a warrior.">
+<meta name="theme-color" content="#0B0B0C">
+<link rel="canonical" href="https://[YOUR-DOMAIN]/">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Warrior Gym">
+<meta property="og:title" content="The Warrior Gym | Best Gym in Kirti Nagar, Delhi">
+<meta property="og:description" content="Personalised training for every goal. All ages. Open 7 days. Pehla din free trial.">
+<meta property="og:url" content="https://[YOUR-DOMAIN]/">
+<meta property="og:image" content="https://[YOUR-DOMAIN]/assets/og-cover.jpg">
+<meta property="og:image:alt" content="The Warrior Gym, Kirti Nagar, New Delhi">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Fonts: exactly three families. font-display=swap avoids invisible text. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Critical above-the-fold paint (prevents a white flash before styles.css) -->
+<style>
+  html{background:#0B0B0C;color:#F5F5F2}
+  body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+  .site-header{position:sticky;top:0}
+</style>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============================ HEADER ============================ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top" aria-label="The Warrior Gym — back to top">
+      <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+        <!-- Shield + crossed blades -->
+        <path d="M24 2.5 42 9v14.5c0 10-7.4 18.6-18 22-10.6-3.4-18-12-18-22V9z"
+              fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+        <path d="M12 34 32 14M36 34 16 14" stroke="#D7263D" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M14 15l-4-4M34 15l4-4" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+        <circle cx="24" cy="24" r="2.4" fill="currentColor"/>
+      </svg>
+      <span class="logo-text">
+        <strong>THE WARRIOR</strong>
+        <em>GYM · KIRTI NAGAR</em>
+      </span>
+    </a>
+
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#transformations">Transformations</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#timings">Timings</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="btn btn-primary btn-sm nav-cta" data-link="whatsapp" data-msg="Hi! I want to book my free trial at The Warrior Gym." href="#contact">
+        Free Trial
+      </a>
+    </nav>
+
+    <a class="btn btn-primary btn-sm header-cta" data-link="whatsapp" data-msg="Hi! I want to book my free trial at The Warrior Gym." href="#contact">
+      Free Trial
+    </a>
+
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================= HERO ============================= -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <span class="ghost-word hero-ghost" aria-hidden="true">WARRIOR</span>
+
+    <div class="wrap hero-inner">
+      <p class="kicker reveal">Kirti Nagar · New Delhi · Open 7 Days</p>
+
+      <h1 class="hero-title reveal">
+        <span class="line">Train Like</span>
+        <span class="line">a <span class="hero-accent">Warrior</span></span>
+      </h1>
+
+      <p class="hero-sub reveal">
+        Personalised training in Kirti Nagar. All ages. Beginner to beast.
+        <span class="hinglish">Pehla din free trial.</span>
+      </p>
+
+      <div class="hero-ctas reveal">
+        <a class="btn btn-primary" data-link="whatsapp" data-msg="Hi! I saw the website — I want to book a free trial at The Warrior Gym." href="#contact">
+          Book Free Trial
+        </a>
+        <a class="btn btn-ghost" href="#programs">View Programs</a>
+      </div>
+
+      <ul class="hero-meta reveal" role="list">
+        <li><strong>5.0</strong><span>Google rating</span></li>
+        <li><strong>7</strong><span>Days a week</span></li>
+        <li><strong>All</strong><span>Age groups</span></li>
+      </ul>
+    </div>
+
+    <a class="scroll-cue" href="#stats" aria-label="Scroll to next section">
+      <span>Scroll</span><i aria-hidden="true"></i>
+    </a>
+  </section>
+
+  <!-- ========================== TRUST STRIP ========================= -->
+  <section class="stats-bar" id="stats" aria-label="Gym at a glance">
+    <div class="wrap">
+      <!-- Rendered from CONFIG.stats in script.js -->
+      <ul class="stat-grid" id="statGrid" role="list"></ul>
+    </div>
+  </section>
+
+  <!-- ============================= ABOUT ============================ -->
+  <section class="section section--slant" id="about">
+    <span class="ghost-word" aria-hidden="true">DISCIPLINE</span>
+    <div class="wrap">
+      <p class="kicker reveal">01 — Our Code</p>
+      <h2 class="reveal">Built for people who<br>show up.</h2>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p class="lede">
+            The Warrior Gym started with one idea: a local gym should feel like a
+            team, not a machine that takes your money and forgets your name.
+          </p>
+          <p>
+            We are a neighbourhood gym in Kirti Nagar, New Delhi. No spa music, no
+            five-page contracts. Just solid equipment, coaches who actually correct
+            your form, and programming built around your body, your goal and your
+            working hours.
+          </p>
+          <p>
+            Beginners walk in nervous every day. Seniors train here. Working
+            professionals come at 6 AM and at 10 PM. Everyone gets the same thing:
+            a plan, a push, and a coach who remembers where you left off.
+          </p>
+          <p class="signoff">Forge your strength. One session at a time.</p>
+        </div>
+
+        <ul class="values" role="list">
+          <li class="value-card reveal">
+            <span class="value-num">01</span>
+            <h3>Discipline</h3>
+            <p>Motivation dies by Wednesday. We build the habit that survives it.</p>
+          </li>
+          <li class="value-card reveal">
+            <span class="value-num">02</span>
+            <h3>Respect</h3>
+            <p>Every body, every age, every level. No judgement inside these walls.</p>
+          </li>
+          <li class="value-card reveal">
+            <span class="value-num">03</span>
+            <h3>Progress</h3>
+            <p>Small honest gains beat fake shortcuts. We track, we adjust, we repeat.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ PROGRAMS ========================== -->
+  <section class="section section--surface" id="programs">
+    <span class="ghost-word ghost-word--right" aria-hidden="true">STRENGTH</span>
+    <div class="wrap">
+      <p class="kicker reveal">02 — Programs</p>
+      <h2 class="reveal">Pick your battlefield.</h2>
+      <p class="section-sub reveal">
+        Six tracks, one gym floor. Your coach picks the mix — you do the reps.
+      </p>
+
+      <div class="card-grid program-grid">
+        <article class="card program-card reveal">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 9v6M7 7v10M17 7v10M20 9v6M7 12h10"/></svg>
+          </span>
+          <h3>Strength &amp; Muscle Building</h3>
+          <p>Barbell-first programming. Progressive overload, tracked weekly — no guesswork.</p>
+          <a class="card-link" data-link="whatsapp" data-msg="Hi! Tell me about the Strength &amp; Muscle Building program at The Warrior Gym." href="#contact">Ask about this →</a>
+        </article>
+
+        <article class="card program-card reveal">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3.5 3.2 6 6.2 6 9.5A6 6 0 0 1 6 12.5C6 9.2 8.5 6.2 12 3z"/><path d="M12 20c-1.6 0-3-1.3-3-2.9 0-1.2.8-2.2 1.6-3 .3.9.8 1.4 1.4 1.7.2-1.9.9-3.4 1.4-4.6.7 1.9 1.6 3.4 1.6 5.9 0 1.6-1.4 2.9-3 2.9z"/></svg>
+          </span>
+          <h3>Weight Loss &amp; Fat Burn</h3>
+          <p>Calorie-smart training with weekly check-ins. Cardio that doesn't bore you to death.</p>
+          <a class="card-link" data-link="whatsapp" data-msg="Hi! Tell me about the Weight Loss &amp; Fat Burn program at The Warrior Gym." href="#contact">Ask about this →</a>
+        </article>
+
+        <article class="card program-card reveal">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+          </span>
+          <h3>Functional / HIIT Conditioning</h3>
+          <p>Forty minutes of raw conditioning. In, out, done. Sled, ropes, intervals, floor work.</p>
+          <a class="card-link" data-link="whatsapp" data-msg="Hi! Tell me about the Functional / HIIT classes at The Warrior Gym." href="#contact">Ask about this →</a>
+        </article>
+
+        <article class="card program-card reveal">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="3.4"/><path d="M5 21c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg>
+          </span>
+          <h3>Personal Training</h3>
+          <p>One coach, one client, your schedule. The fastest route to a specific goal.</p>
+          <a class="card-link" data-link="whatsapp" data-msg="Hi! I'd like details and pricing for Personal Training at The Warrior Gym." href="#contact">Ask about this →</a>
+        </article>
+
+        <article class="card program-card reveal">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18M6 20v-5h5v5M11 15V9h5v11M16 9V4h5v16"/></svg>
+          </span>
+          <h3>Beginner Foundations</h3>
+          <p>First four weeks: form, breathing, basic strength. Walk in knowing nothing — that's fine.</p>
+          <a class="card-link" data-link="whatsapp" data-msg="Hi! I'm a complete beginner — tell me about the Beginner Foundations track." href="#contact">Ask about this →</a>
+        </article>
+
+        <article class="card program-card reveal">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 12h3l2.5-6 3.5 12 2.5-6H21"/></svg>
+          </span>
+          <h3>Senior &amp; Youth Fitness</h3>
+          <p>Joint-safe training for 50+, supervised strength for teens 16–18. Slow, correct, safe.</p>
+          <a class="card-link" data-link="whatsapp" data-msg="Hi! Tell me about Senior &amp; Youth Fitness at The Warrior Gym." href="#contact">Ask about this →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================== FACILITIES ========================= -->
+  <section class="section" id="facilities">
+    <div class="wrap">
+      <p class="kicker reveal">03 — The Floor</p>
+      <h2 class="reveal">Everything you need.<br>Nothing you don't.</h2>
+      <p class="section-sub reveal">[EDIT] Update this list to match your actual equipment.</p>
+
+      <ul class="facility-grid" role="list">
+        <li class="facility reveal">
+          <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 9v6M7 7v10M17 7v10M20 9v6M7 12h10"/></svg></span>
+          <h3>Free Weights</h3><p>Racks, barbells, dumbbells up to [X] kg.</p>
+        </li>
+        <li class="facility reveal">
+          <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3" y="8" width="18" height="10" rx="2"/><path d="M7 8V5M17 8V5M12 8v10"/></svg></span>
+          <h3>Machines</h3><p>Full pin-loaded circuit for every muscle group.</p>
+        </li>
+        <li class="facility reveal">
+          <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 17h4l3-8 3 12 3-9 2 5h3"/></svg></span>
+          <h3>Cardio Zone</h3><p>Treadmills, cycles, cross-trainer.</p>
+        </li>
+        <li class="facility reveal">
+          <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="3.4"/><path d="M5 21c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg></span>
+          <h3>Trainer On Floor</h3><p>A coach on the floor every hour, not just on paper.</p>
+        </li>
+        <li class="facility reveal">
+          <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 20V9l8-5 8 5v11z"/><path d="M9 20v-6h6v6"/></svg></span>
+          <h3>Changing Area</h3><p>Clean changing room and lockers. [CONFIRM lockers]</p>
+        </li>
+        <li class="facility reveal">
+          <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></span>
+          <h3>RO Drinking Water</h3><p>Filtered water, free. Bring your bottle.</p>
+        </li>
+        <li class="facility reveal">
+          <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="2" y="14" width="4" height="6" rx="1.5"/><rect x="18" y="14" width="4" height="6" rx="1.5"/></svg></span>
+          <h3>Sound System</h3><p>Music that pushes you, volume that respects you.</p>
+        </li>
+        <li class="facility reveal">
+          <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 17V7h3.2a3 3 0 0 1 0 6H9"/></svg></span>
+          <h3>Parking</h3><p>Street / two-wheeler parking. [CONFIRM availability]</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================ TRAINERS ========================== -->
+  <section class="section section--surface section--slant" id="trainers">
+    <span class="ghost-word" aria-hidden="true">COACHES</span>
+    <div class="wrap">
+      <p class="kicker reveal">04 — The Coaches</p>
+      <h2 class="reveal">People who push<br>you past your excuse.</h2>
+      <p class="section-sub reveal">Replace the placeholders below with real names, certifications and specialities.</p>
+
+      <!-- Rendered from CONFIG.trainers in script.js -->
+      <div class="card-grid trainer-grid" id="trainerGrid"></div>
+    </div>
+  </section>
+
+  <!-- ========================= TRANSFORMATIONS ====================== -->
+  <section class="section" id="transformations">
+    <div class="wrap">
+      <p class="kicker reveal">05 — The Proof</p>
+      <h2 class="reveal">Results you can see.</h2>
+      <p class="section-sub reveal">
+        Real member photos go here. Until then these are placeholders — and no,
+        we won't fake results. <span class="muted">Results vary by person, diet and consistency.</span>
+      </p>
+
+      <div class="carousel" data-carousel>
+        <div class="carousel-viewport" id="tfTrack" role="group" aria-label="Member transformations carousel">
+          <article class="tf-card">
+            <div class="tf-photos">
+              <figure class="photo photo--before">
+                <img data-photo alt="[REPLACE WITH REAL PHOTO] Member before starting at The Warrior Gym" loading="lazy" width="600" height="750">
+                <figcaption>BEFORE</figcaption>
+              </figure>
+              <figure class="photo photo--after">
+                <img data-photo alt="[REPLACE WITH REAL PHOTO] Same member after training at The Warrior Gym" loading="lazy" width="600" height="750">
+                <figcaption>AFTER</figcaption>
+              </figure>
+            </div>
+            <div class="tf-body">
+              <h3>[MEMBER NAME]</h3>
+              <p class="tf-stat">[−X] kg in [X] months</p>
+              <p>[ONE-LINE STORY: what they did, how often they trained, what changed.]</p>
+            </div>
+          </article>
+
+          <article class="tf-card">
+            <div class="tf-photos">
+              <figure class="photo photo--before">
+                <img data-photo alt="[REPLACE WITH REAL PHOTO] Member before training" loading="lazy" width="600" height="750">
+                <figcaption>BEFORE</figcaption>
+              </figure>
+              <figure class="photo photo--after">
+                <img data-photo alt="[REPLACE WITH REAL PHOTO] Member after training" loading="lazy" width="600" height="750">
+                <figcaption>AFTER</figcaption>
+              </figure>
+            </div>
+            <div class="tf-body">
+              <h3>[MEMBER NAME]</h3>
+              <p class="tf-stat">[+X] kg lean mass</p>
+              <p>[ONE-LINE STORY: beginner to confident lifter in [X] months.]</p>
+            </div>
+          </article>
+
+          <article class="tf-card">
+            <div class="tf-photos">
+              <figure class="photo photo--before">
+                <img data-photo alt="[REPLACE WITH REAL PHOTO] Member before training" loading="lazy" width="600" height="750">
+                <figcaption>BEFORE</figcaption>
+              </figure>
+              <figure class="photo photo--after">
+                <img data-photo alt="[REPLACE WITH REAL PHOTO] Member after training" loading="lazy" width="600" height="750">
+                <figcaption>AFTER</figcaption>
+              </figure>
+            </div>
+            <div class="tf-body">
+              <h3>[MEMBER NAME]</h3>
+              <p class="tf-stat">[X] cm waist</p>
+              <p>[ONE-LINE STORY: senior member, joint-safe training, [X] months.]</p>
+            </div>
+          </article>
+
+          <article class="tf-card">
+            <div class="tf-photos">
+              <figure class="photo photo--before">
+                <img data-photo alt="[REPLACE WITH REAL PHOTO] Member before training" loading="lazy" width="600" height="750">
+                <figcaption>BEFORE</figcaption>
+              </figure>
+              <figure class="photo photo--after">
+                <img data-photo alt="[REPLACE WITH REAL PHOTO] Member after training" loading="lazy" width="600" height="750">
+                <figcaption>AFTER</figcaption>
+              </figure>
+            </div>
+            <div class="tf-body">
+              <h3>[MEMBER NAME]</h3>
+              <p class="tf-stat">[X]-week challenge</p>
+              <p>[ONE-LINE STORY: working professional, 4 sessions a week, strength reset.]</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="car-btn" type="button" data-dir="-1" aria-controls="tfTrack" aria-label="Previous transformation">&#8592;</button>
+          <button class="car-btn" type="button" data-dir="1" aria-controls="tfTrack" aria-label="Next transformation">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= PRICING ========================== -->
+  <section class="section section--surface" id="pricing">
+    <span class="ghost-word ghost-word--right" aria-hidden="true">POWER</span>
+    <div class="wrap">
+      <p class="kicker reveal">06 — Pricing</p>
+      <h2 class="reveal">Pay for training.<br>Not for excuses.</h2>
+      <p class="section-sub reveal">
+        Prices fill in from one place (CONFIG.prices). No hidden joining fee unless you add one.
+      </p>
+
+      <!-- Rendered from CONFIG.prices in script.js -->
+      <div class="price-grid" id="priceGrid"></div>
+
+      <div class="price-extras">
+        <div class="extra">
+          <h3>Personal Training Add-on</h3>
+          <p>1-on-1 coaching stacked on any plan — [X] sessions per month at ₹[PRICE]/month.</p>
+        </div>
+        <div class="extra">
+          <h3>Student &amp; Couple Offers</h3>
+          <p>Valid student ID or two memberships together — ask the front desk for the current discount.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= TIMINGS ========================== -->
+  <section class="section" id="timings">
+    <div class="wrap">
+      <p class="kicker reveal">07 — Timings</p>
+      <h2 class="reveal">We're open<br>when you're free.</h2>
+
+      <div class="timings-grid">
+        <div class="timings-table reveal">
+          <div class="timings-head">
+            <h3>Weekly Schedule</h3>
+            <span class="open-badge" id="openBadge" data-state="closed">
+              <i aria-hidden="true"></i><span id="openBadgeText">Checking…</span>
+            </span>
+          </div>
+          <!-- Rendered from CONFIG.timings in script.js -->
+          <table id="timingsTable" class="is-loading">
+            <caption class="sr-only">Weekly opening hours for The Warrior Gym</caption>
+            <thead><tr><th scope="col">Day</th><th scope="col">Hours</th></tr></thead>
+            <tbody></tbody>
+          </table>
+          <p class="timings-note">
+            [CONFIRM] Timings above are placeholders. Closed on national holidays unless stated.
+          </p>
+        </div>
+
+        <aside class="timings-side reveal">
+          <h3>Peak hours</h3>
+          <p>7–10 AM and 6–9 PM are busiest. Want a quieter floor? Come 11 AM–4 PM or after 9 PM.</p>
+          <h3>Weekend access</h3>
+          <p>Included in every plan. No weekend surcharge, no separate pass.</p>
+          <a class="btn btn-primary" data-link="whatsapp" data-msg="Hi! What are the current timings at The Warrior Gym?" href="#contact">Confirm timings on WhatsApp</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== TESTIMONIALS ======================== -->
+  <section class="section section--surface section--slant" id="testimonials">
+    <span class="ghost-word" aria-hidden="true">HONEST</span>
+    <div class="wrap">
+      <p class="kicker reveal">08 — Word on the Floor</p>
+      <h2 class="reveal">What members say.</h2>
+      <p class="section-sub reveal muted">
+        Placeholder reviews below — replace with real Google reviews before launch.
+      </p>
+
+      <div class="carousel" data-carousel>
+        <div class="carousel-viewport testimonial-track" id="reviewTrack" role="group" aria-label="Member testimonials carousel">
+          <article class="review">
+            <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote><p>[PLACEHOLDER REVIEW — replace with a real Google review. Two or three sentences about the coaching, the crowd or the results.]</p></blockquote>
+            <footer><strong>[MEMBER NAME]</strong><span>[Member since X]</span></footer>
+          </article>
+          <article class="review">
+            <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote><p>[PLACEHOLDER REVIEW — beginner who was nervous about joining and now trains four days a week.]</p></blockquote>
+            <footer><strong>[MEMBER NAME]</strong><span>[Member since X]</span></footer>
+          </article>
+          <article class="review">
+            <div class="stars" role="img" aria-label="4 out of 5 stars">★★★★☆</div>
+            <blockquote><p>[PLACEHOLDER REVIEW — honest feedback, including one thing that could be better. Real reviews aren't all five stars.]</p></blockquote>
+            <footer><strong>[MEMBER NAME]</strong><span>[Member since X]</span></footer>
+          </article>
+          <article class="review">
+            <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote><p>[PLACEHOLDER REVIEW — senior member or working parent about flexible timings and trainer attention.]</p></blockquote>
+            <footer><strong>[MEMBER NAME]</strong><span>[Member since X]</span></footer>
+          </article>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="car-btn" type="button" data-dir="-1" aria-controls="reviewTrack" aria-label="Previous testimonial">&#8592;</button>
+          <button class="car-btn" type="button" data-dir="1" aria-controls="reviewTrack" aria-label="Next testimonial">&#8594;</button>
+          <a class="text-link" id="mapsReviewsLink" href="#" target="_blank" rel="noopener">Read all Google reviews →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================== FAQ ============================ -->
+  <section class="section" id="faq">
+    <div class="wrap wrap--narrow">
+      <p class="kicker reveal">09 — Straight Answers</p>
+      <h2 class="reveal">Questions we get<br>every day.</h2>
+
+      <div class="accordion" id="faqAccordion">
+        <div class="acc-item">
+          <h3><button class="acc-trigger" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-1-btn">
+            Is the trial really free?<span class="acc-plus" aria-hidden="true"></span>
+          </button></h3>
+          <div class="acc-panel" id="faq-1" role="region" aria-labelledby="faq-1-btn" hidden>
+            <p>Yes — one full session, no card, no deposit. Walk in, train, decide after. [CONFIRM: limit one trial per person?]</p>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <h3><button class="acc-trigger" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-2-btn">
+            I've never trained before. Will I feel out of place?<span class="acc-plus" aria-hidden="true"></span>
+          </button></h3>
+          <div class="acc-panel" id="faq-2" role="region" aria-labelledby="faq-2-btn" hidden>
+            <p>Half the people on the floor started exactly there. Beginners get a first-week floor walk-through and a simple plan — no wandering between machines.</p>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <h3><button class="acc-trigger" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-3-btn">
+            Is a trainer included in the membership?<span class="acc-plus" aria-hidden="true"></span>
+          </button></h3>
+          <div class="acc-panel" id="faq-3" role="region" aria-labelledby="faq-3-btn" hidden>
+            <p>Floor guidance is included — form checks, plan setup, progress tracking. Dedicated 1-on-1 sessions are the Personal Training add-on. [CONFIRM what counts as included.]</p>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <h3><button class="acc-trigger" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-4-btn">
+            What are your timings on Sunday?<span class="acc-plus" aria-hidden="true"></span></button></h3>
+          <div class="acc-panel" id="faq-4" role="region" aria-labelledby="faq-4-btn" hidden>
+            <p>See the timings table above — it's live and updates itself. Sunday hours are shorter than weekdays.</p>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <h3><button class="acc-trigger" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-5-btn">
+            Do you have parking?<span class="acc-plus" aria-hidden="true"></span>
+          </button></h3>
+          <div class="acc-panel" id="faq-5" role="region" aria-labelledby="faq-5-btn" hidden>
+            <p>[CONFIRM] Two-wheeler parking is easy on the lane. Car parking depends on the hour — call before you drive in.</p>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <h3><button class="acc-trigger" type="button" aria-expanded="false" aria-controls="faq-6" id="faq-6-btn">
+            Can I freeze my membership?<span class="acc-plus" aria-hidden="true"></span>
+          </button></h3>
+          <div class="acc-panel" id="faq-6" role="region" aria-labelledby="faq-6-btn" hidden>
+            <p>[CONFIRM policy] Typically a medical or travel freeze is allowed once per plan — talk to the front desk before your billing date, not after.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== CTA BAND ======================== -->
+  <section class="cta-band" aria-label="Book a free trial">
+    <div class="wrap cta-band-inner">
+      <h2>Discipline over motivation.</h2>
+      <p>Your first session is on us. Bring shoes. We'll handle the rest.</p>
+      <a class="btn btn-invert" data-link="whatsapp" data-msg="Hi! I want to book my free trial at The Warrior Gym." href="#contact">Book Free Trial on WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- ============================= CONTACT ========================== -->
+  <section class="section" id="contact">
+    <span class="ghost-word ghost-word--right" aria-hidden="true">SHOW UP</span>
+    <div class="wrap">
+      <p class="kicker reveal">10 — Contact</p>
+      <h2 class="reveal">Start with a free trial.</h2>
+      <p class="section-sub reveal">Fill this in and it opens WhatsApp with your details already typed. Takes 20 seconds.</p>
+
+      <div class="contact-grid">
+        <form class="contact-form reveal" id="trialForm" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Full name" required aria-describedby="name-error">
+            <span class="error" id="name-error" aria-live="polite"></span>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone / WhatsApp number</label>
+            <input type="tel" id="phone" name="phone" inputmode="numeric" autocomplete="tel" placeholder="10-digit mobile number" required aria-describedby="phone-error">
+            <span class="error" id="phone-error" aria-live="polite"></span>
+          </div>
+
+          <div class="field">
+            <label for="goal">Your goal</label>
+            <select id="goal" name="goal" required aria-describedby="goal-error">
+              <option value="">Choose one</option>
+              <option>Lose fat / weight loss</option>
+              <option>Build muscle / strength</option>
+              <option>General fitness</option>
+              <option>Sport / conditioning</option>
+              <option>Senior fitness (50+)</option>
+              <option>Teen fitness (16–18)</option>
+            </select>
+            <span class="error" id="goal-error" aria-live="polite"></span>
+          </div>
+
+          <div class="field">
+            <label for="time">Preferred time</label>
+            <select id="time" name="time" required aria-describedby="time-error">
+              <option value="">Choose one</option>
+              <option>Early morning (5–7 AM)</option>
+              <option>Morning (7–10 AM)</option>
+              <option>Afternoon (12–4 PM)</option>
+              <option>Evening (5–8 PM)</option>
+              <option>Night (8–10 PM)</option>
+              <option>Weekend only</option>
+            </select>
+            <span class="error" id="time-error" aria-live="polite"></span>
+          </div>
+
+          <button class="btn btn-primary btn-block" type="submit">Send on WhatsApp</button>
+          <p class="form-note">
+            No spam, no calls at odd hours. This opens WhatsApp with your message pre-filled.
+          </p>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+
+          <!--
+            BACKEND HOOK — if you later want submissions in a backend or Formspree:
+            1. Give the <form> an action="https://formspree.io/f/XXXXXXX" method="POST".
+            2. In script.js, inside handleSubmit(), swap the whatsapp redirect for
+               fetch(form.action, {method:'POST', body:new FormData(form)}) and show a thank-you state.
+            Default behaviour (no backend) is the WhatsApp deep link.
+          -->
+        </form>
+
+        <div class="contact-side reveal">
+          <ul class="contact-list" role="list">
+            <li>
+              <span class="contact-label">Call</span>
+              <a id="phoneLink" href="#" data-link="phone">[PHONE NUMBER]</a>
+            </li>
+            <li>
+              <span class="contact-label">WhatsApp</span>
+              <a id="waLink" href="#" data-link="whatsapp" data-msg="Hi! I want to know more about The Warrior Gym.">Message us</a>
+            </li>
+            <li>
+              <span class="contact-label">Email</span>
+              <a id="emailLink" href="#">[EMAIL]</a>
+            </li>
+            <li>
+              <span class="contact-label">Address</span>
+              <address id="addressText">[FULL ADDRESS]</address>
+            </li>
+          </ul>
+
+          <div class="map-frame">
+            <!-- Lazy-loaded Google Map. Replace the q= query with your exact map listing. -->
+            <iframe
+              title="Map showing The Warrior Gym in Kirti Nagar, New Delhi"
+              src="https://maps.google.com/maps?q=The%20Warrior%20Gym%20Kirti%20Nagar%20New%20Delhi&z=15&output=embed"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="360"></iframe>
+          </div>
+          <a class="text-link" id="directionsLink" href="#" target="_blank" rel="noopener">Open in Google Maps →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============================= FOOTER ============================= -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="logo" href="#top" aria-label="The Warrior Gym — back to top">
+        <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <path d="M24 2.5 42 9v14.5c0 10-7.4 18.6-18 22-10.6-3.4-18-12-18-22V9z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+          <path d="M12 34 32 14M36 34 16 14" stroke="#D7263D" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="24" cy="24" r="2.4" fill="currentColor"/>
+        </svg>
+        <span class="logo-text"><strong>THE WARRIOR</strong><em>GYM · KIRTI NAGAR</em></span>
+      </a>
+      <p class="footer-tagline">Forge your strength.<br>Discipline over motivation.</p>
+      <ul class="socials" role="list">
+        <li><a data-link="instagram" href="#" aria-label="The Warrior Gym on Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </a></li>
+        <li><a data-link="facebook" href="#" aria-label="The Warrior Gym on Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14.5 8.5h2.5V5h-2.5C12.6 5 11 6.6 11 8.5V11H8.5v3.5H11V21h3.5v-6.5H17L17.5 11H14.5V8.8c0-.2.1-.3.3-.3z"/></svg>
+        </a></li>
+        <li><a data-link="youtube" href="#" aria-label="The Warrior Gym on YouTube" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2.5" y="6" width="19" height="12" rx="3.5"/><path d="M10.5 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none"/></svg>
+        </a></li>
+      </ul>
+    </div>
+
+    <nav class="footer-col" aria-label="Footer navigation">
+      <h3>Explore</h3>
+      <ul role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#timings">Timings</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-col">
+      <h3>Visit</h3>
+      <address id="footerAddress">[FULL ADDRESS]</address>
+      <p><a data-link="phone" href="#" id="footerPhone">[PHONE NUMBER]</a></p>
+      <p><a data-link="whatsapp" data-msg="Hi! I want to know more about The Warrior Gym." href="#">WhatsApp</a></p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Hours</h3>
+      <p id="footerHours">Mon–Sat [OPEN]–[CLOSE]<br>Sun [OPEN]–[CLOSE]</p>
+      <p class="muted">[CONFIRM] before launch.</p>
+    </div>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <p>&copy; <span id="year">2026</span> The Warrior Gym, Kirti Nagar, New Delhi. All rights reserved.</p>
+    <p class="muted">Train like a warrior.</p>
+  </div>
+</footer>
+
+<!-- ====================== FLOATING MOBILE BAR ====================== -->
+<div class="mobile-bar" aria-label="Quick contact">
+  <a class="mb-btn mb-call" data-link="phone" href="#contact">
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6.5 3.5h3l1.5 4-2 1.5a11 11 0 0 0 6 6L16.5 13l4 1.5v3a2 2 0 0 1-2.2 2A16 16 0 0 1 4.5 5.7 2 2 0 0 1 6.5 3.5z"/></svg>
+    Call
+  </a>
+  <a class="mb-btn mb-wa" data-link="whatsapp" data-msg="Hi! I want to book my free trial at The Warrior Gym." href="#contact">
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.5-5.7c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-1.9-1.2 7.2 7.2 0 0 1-1.3-1.7c-.1-.2 0-.3.1-.4l.4-.5.2-.4v-.4l-.8-1.9c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.2 11.2 0 0 0 4.3 3.8c1.6.6 2.2.7 3 .6a2.5 2.5 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .1-1.2z"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+<!-- ===================== STRUCTURED DATA ========================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthClub",
+  "name": "The Warrior Gym",
+  "description": "Neighbourhood gym in Kirti Nagar, New Delhi offering personalised strength, fat-loss and functional training for all ages. Open 7 days.",
+  "url": "https://[YOUR-DOMAIN]/",
+  "image": "https://[YOUR-DOMAIN]/assets/og-cover.jpg",
+  "logo": "https://[YOUR-DOMAIN]/assets/logo.png",
+  "telephone": "+91-XXXXXXXXXX",
+  "email": "[EMAIL]",
+  "priceRange": "₹[PRICE]–₹[PRICE]",
+  "currenciesAccepted": "INR",
+  "paymentAccepted": "Cash, UPI, Card",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "[STREET ADDRESS]",
+    "addressLocality": "Kirti Nagar, New Delhi",
+    "addressRegion": "Delhi",
+    "postalCode": "110015",
+    "addressCountry": "IN"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 28.6526558, "longitude": 77.1390799 },
+  "hasMap": "https://www.google.com/maps?q=28.6526558,77.1390799",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "05:30", "closes": "22:30" },
+    { "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday", "opens": "07:00", "closes": "13:00" }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "[X]",
+    "bestRating": "5"
+  },
+  "sameAs": ["[INSTAGRAM URL]", "[FACEBOOK URL]", "[YOUTUBE URL]"]
+}
+</script>
+
+<script src="script.js" defer></script>
+</body>
+</html>
