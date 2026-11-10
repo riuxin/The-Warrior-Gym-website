@@ -243,9 +243,9 @@ p:last-child { margin-bottom: 0; }
   min-height: var(--header-h);
 }
 
-.logo { display: inline-flex; align-items: center; gap: .65rem; }
-.logo-mark { width: 34px; height: 34px; color: var(--text-primary); flex: none; }
-.logo-text { display: flex; flex-direction: column; line-height: 1; }
+.logo { display: inline-flex; align-items: center; }
+/* Wordmark-only lockup — the SVG mark was removed on request */
+.logo-text { display: flex; flex-direction: column; line-height: 1; border-left: 2px solid var(--accent-red); padding-left: .7rem; }
 .logo-text strong {
   font-family: var(--font-display);
   font-size: 1.22rem;
